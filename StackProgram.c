@@ -41,18 +41,6 @@ void push(st *s, int newitem) {
   count++;
 }
 
-// Remove element from stack
-void pop(st *s) {
-  if (isempty(s)) {
-    printf("\n STACK EMPTY \n");
-  } else {
-    printf("Item popped= %d", s->items[s->top]);
-    s->top--;
-  }
-  count--;
-  printf("\n");
-}
-
 // Print elements of stack
 void printStack(st *s) {
   printf("Stack: ");
@@ -74,7 +62,6 @@ void search(st *s, int searchedItem) {
 
 // Driver code
 int main() {
-  int ch;
   st *s = (st *)malloc(sizeof(st));
   int max = 100;
   int random;
