@@ -58,6 +58,7 @@ void search(st *s, int searchedItem) {
       printf("at location %d (from the bottom). \n", MAX - i);
     }
   }
+    printf(" item not found.\n");
 }
 
 // Driver code
